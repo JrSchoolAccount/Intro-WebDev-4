@@ -1,0 +1,17 @@
+html {
+  color: aliceblue;
+  height: 100vh;
+  min-width: 600px;
+  background-image: linear-gradient(130deg, #272727, #53195f);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+p {
+  font: bold 11px arial;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
