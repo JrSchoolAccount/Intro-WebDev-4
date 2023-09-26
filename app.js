@@ -8,7 +8,7 @@ const completedInfo = document.querySelector('p');
 // Variables
 let completedCount = 0;
 
-// Array with objects containing Todo items
+// Array containing objects with Todo tasks
 const todoArray = [];
 
 // Function
@@ -62,9 +62,22 @@ btn.addEventListener('click',function() {
   trashcan.setAttribute('class', 'fa-solid fa-trash-can-arrow-up fa-lg');
   item.appendChild(trashcan);
 
-  // Add listener to span to delete item on click
+/*  Add listener to span to delete item on click.
+    With conditionals for editing total completed count.
+ */
   trashcan.addEventListener('click', function () {
-    item.remove();
+    if (item.getAttribute('class') == 'completed'){
+      // Remove item from todoArray
+      item.remove();
+      completedCount--
+    }
+    else {
+      // Remove item from todoArray
+      item.remove();
+    }
+
+    completedInfo.innerText = `${completedCount} completed`;
+
   });
 
   //Empty input field
