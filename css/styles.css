@@ -7,6 +7,10 @@ html {
   background-size: auto;
 }
 
+small {
+  color: gray;
+}
+
 p {
   font: bold 11px arial;
 }
