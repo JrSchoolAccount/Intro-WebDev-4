@@ -7,12 +7,21 @@ html {
   background-size: auto;
 }
 
+span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 small {
   color: gray;
 }
 
 p {
   font: bold 11px arial;
+}
+
+button {
+  cursor: pointer;
 }
 
 .completed {
