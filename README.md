@@ -4,4 +4,4 @@ Task 4
 
 ## Description
 
-Simple toDo list app with javascript.
+Simple ToDo List App.
