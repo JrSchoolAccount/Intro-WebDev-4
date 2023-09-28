@@ -49,7 +49,7 @@ btn.addEventListener('click',function() {
   itemLabel.innerText = text;
   item.appendChild(itemLabel);
   
-  // Add trashcan icon to span element
+  // Add trashcan icon to new span element
   const trashcan = document.createElement('span');
   trashcan.setAttribute('class', 'trashcan');
   trashcan.setAttribute('class', 'fa-solid fa-trash-can-arrow-up fa-lg');
@@ -86,7 +86,8 @@ btn.addEventListener('click',function() {
  */
   trashcan.addEventListener('click', function () {
     if (item.getAttribute('class') == 'completed'){
-      // Remove item from todoArray
+
+      // Remove object from todoArray
       let removeText = item.firstChild.firstChild.textContent;
       let indexToRemove = todoArray.map(t => t.name).indexOf(removeText);
       todoArray.splice(indexToRemove, 1);
@@ -95,7 +96,8 @@ btn.addEventListener('click',function() {
       completedCounter--
     }
     else {
-      // Remove item from todoArray
+
+      // Remove Object from todoArray
       removeText = item.firstChild.firstChild.textContent;
       let indexToRemove = todoArray.map(t => t.name).indexOf(removeText);
       todoArray.splice(indexToRemove, 1);
